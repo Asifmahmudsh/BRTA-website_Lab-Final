@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" class="logo" Salt=""></a>
+        <nav>
+            
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <form id="loginForm" action="validate_login.php" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </main>
+  <footer>
+    <div class="contact">
+            <h3>Contact Us</h3>
+            <p><strong>Address</strong><br> BRTA Building. Dhaka-1212, Bangladesh.</p>
+            <p><strong>Email</strong> info@brta.gov.bd</p>
+            
+            
+        </div>
+    </div>
+
+        <div id="errorMessage"></div>
+    </form>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

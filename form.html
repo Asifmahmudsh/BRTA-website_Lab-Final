@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRTA Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" class="logo" Salt=""></a>
+        <nav>
+            
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="form.html">Form</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form">
+      <h1>Application Form</h1>
+      <form id="licenseForm" enctype="multipart/form-data" action="process_form.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="nid">NID:</label>
+              <input type="text" id="nid" name="nid" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="vehicleNo">Vehicle No:</label>
+              <input type="text" id="vehicleNo" name="vehicleNo" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="nidCopy">NID</label>
+              <input type="file" id="nidCopy" name="nidCopy" accept=".pdf, .doc, .docx" required>
+            </div>
+      
+          
+      
+            <button type="submit">Submit</button>
+          </form>
+
+    </section>
+
+    
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><strong>Address</strong><br> BRTA Building. Dhaka-1212, Bangladesh.</p>
+            <p><strong>Email</strong> info@brta.gov.bd</p>
+       
+                
+            </div>
+        </div>
+
+            <div id="errorMessage"></div>
+        </form>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
